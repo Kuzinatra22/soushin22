@@ -1,9 +1,26 @@
-randNum = 5
-for i in range(1,5,1):
-    num = int(input("Угадай число от 0 до 10"))
-    print(num)
-    if num == randNum:
-        print("Ты победил")
-        break
-    if i ==5:
-        print("Проиграл")
+# age1 = 50
+# age2 = 60
+# if age2>age1 and age3>age2:
+#     print("Возраст 3 больше всех")
+# elif age2>age1 and age2>age3:
+#     print("Возраст 2 больше всех")
+# else:
+#     print("Возраст 1 больше всех")
+
+
+
+a = 100
+n = 50
+money = int(input("Сколько у вас денег?"))
+if money > a and
+        
+            
+
+
+
+
+
+
+
+
+
