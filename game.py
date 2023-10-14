@@ -1,40 +1,50 @@
+# С помощью int(input())
+
 import random
+from time import sleep
 hp = 100
-speed = 0
 distance = 400
-yetti = 1
+speed = 0
+
+yetti = 3
 tree = 2
-rock = 3
+rock = 1
 
 while True:
-    print()
-
-    chanceEnemy = random.randint(0,10)
+    print('')
+    chanceEnemy = random.randint(0,6)
     if chanceEnemy == rock:
         print('Вы столкнулись с камнем')
-        hp -=5
-        print(f"У вас осталось {hp} жизней")
+        hp -= 5
+        print(f'У вас осталось {hp} жизней')
+        sleep(1)
     elif chanceEnemy == yetti:
         print('Вас пожрал Йети')
-        hp -=10
-        print(f"У вас осталось {hp} жизней")
+        hp -= 10
+        print(f'У вас осталось {hp} жизней')
+        sleep(1)
     elif chanceEnemy == tree:
-        print('Вы врезались в дерево')
-        hp -=8
-        print(f"У вас осталось {hp} жизней")
-
-
-    speed += 1
-    distance -= speed
-    print(F"\nВы летите со скорость {speed} км/с")
-    print(F"\n Осталось проехать {speed} км/с")
-    print(F"Осталось проехать {distance} километров")
+        print('Вы влетели в дерево')
+        hp -= 8
+        print(f'У вас осталось {hp} жизней')
+        sleep(1)
+        
+    speed += 1 #speed = speed + 1.
+    distance -= speed #distance = distance - speed
+    print(f'Вы летите со скорость {speed} км/c')
+    print(f'Осталось проехать {distance} километров')
+    
     if (distance <= 0):
-        print("ура")
+        print('УРА! Победа!')
         break
-    if (hp<=0):
-      print("Вас сожрали")
-      break
+    if (hp <= 0):
+        print('Вас сожрали')
+        break
+
+    sleep(0.6)
 
 
-    #сделать,чтобы игрок мог выбирать сторону,куда повернуть
+
+
+print ("Перед вами камень")
+int(input("Влево"))
